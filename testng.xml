@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="5">
+   <test name="Chrome on Windows">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="10" />
+        <classes>
+            <class name="com.paris.tests.ArticleTest" />
+        </classes>
+    </test>
+    <test name="Firefox on macOS">
+        <parameter name="browser" value="Firefox" />
+        <parameter name="os" value="OS X" />
+        <parameter name="osVersion" value="Monterey" />
+        <classes>
+            <class name="com.paris.tests.ArticleTest" />
+        </classes>
+    </test>
+    <test name="Safari on macOS">
+        <parameter name="browser" value="Safari" />
+        <parameter name="os" value="OS X" />
+        <parameter name="osVersion" value="Monterey" />
+        <classes>
+            <class name="com.paris.tests.ArticleTest" />
+        </classes>
+    </test>
+    <test name="Edge on Windows">
+        <parameter name="browser" value="Edge" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="11" />
+        <classes>
+            <class name="com.paris.tests.ArticleTest" />
+        </classes>
+    </test>
+    <test name="Chrome on Android">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="os" value="Android" />
+        <parameter name="osVersion" value="12.0" />
+        <classes>
+            <class name="com.paris.tests.ArticleTest" />
+        </classes>
+    </test>
+</suite> <!-- Suite -->

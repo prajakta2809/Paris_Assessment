@@ -1,0 +1,41 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "prajaktadigraje_3Z1sg2",
+  "key": "prchXPx6qsU5cUg6qJQp",
+  "capabilities": {
+    "browserstack.debug": true,
+    "browserstack.networkLogs": true
+  },
+  "environments": [
+    {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "latest"
+    },
+    {
+      "os": "OS X",
+      "os_version": "Ventura",
+      "browser": "Safari",
+      "browser_version": "latest"
+    },
+    {
+      "device": "Samsung Galaxy S22",
+      "os_version": "12.0",
+      "real_mobile": true,
+      "browser": "Chrome"
+    },
+    {
+      "device": "iPhone 14",
+      "os_version": "16",
+      "real_mobile": true,
+      "browser": "Safari"
+    },
+    {
+      "os": "Windows",
+      "os_version": "11",
+      "browser": "Firefox",
+      "browser_version": "latest"
+    }
+  ]
+}

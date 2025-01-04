@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome on Android(failed)">
+    <parameter name="os" value="Android"/>
+    <parameter name="osVersion" value="12.0"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.paris.tests.ArticleTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testArticleScrapingAndTranslation"/>
+        </methods>
+      </class> <!-- com.paris.tests.ArticleTest -->
+    </classes>
+  </test> <!-- Chrome on Android(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
